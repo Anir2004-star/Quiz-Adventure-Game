@@ -42,5 +42,9 @@ But be careful... one wrong answer and your journey ends with a dramatic **GAME 
 | **Pixabay Sounds** | Free sound effects for Game Over audio |
 
 ---
-
 ## 🗂️ Project Structure
+quiz-adventure/
+│
+├── index.html # Main game HTML
+├── style.css # Game styles and animations
+├── script.js # Game logic and trivia handling
