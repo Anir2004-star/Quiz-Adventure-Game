@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Adventure - Progressive Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>🌍 Trivia Adventure</h1>
+    <p>Start your journey of knowledge and rise through the ranks!</p>
+    <button id="start-btn" class="diff-btn">Start Adventure 🚀</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <header>
+      <h2>🌠 Trivia Adventure</h2>
+      <p class="stage-text">Stage 1</p>
+      <p class="level-text">Difficulty: Easy 🌿</p>
+    </header>
+
+    <main id="quiz">
+      <div class="question-container">
+        <h3 id="question">Loading question…</h3>
+        <div id="options" class="options"></div>
+      </div>
+      <button id="next-btn" class="next-btn hidden">Next</button>
+    </main>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="screen hidden">
+    <h2>💀 Game Over</h2>
+    <p id="final-message"></p>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <footer>
+    <p>⚡ Powered by Open Trivia DB</p>
+  </footer>
+
+  <!-- 🎵 Sound Effects -->
+  <!-- 🎵 Sound Effects -->
+<audio id="gameOverSound" preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_51f0e7994d.mp3?filename=game-over-arcade-6435.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="gameOverVoice" preload="auto">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/02/audio_53e7f2d80b.mp3?filename=game-over-epic-voice-6020.mp3" type="audio/mpeg">
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
